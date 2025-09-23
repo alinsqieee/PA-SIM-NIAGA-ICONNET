@@ -1,0 +1,2 @@
+[22-Jul-2025 22:45:44 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/gosaleappbiz/gosale.biz.id/db/db.php on line 6
+[22-Jul-2025 22:45:44 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/gosaleappbiz/gosale.biz.id/db/db.php on line 6

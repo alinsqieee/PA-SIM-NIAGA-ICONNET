@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+ErrorDocument 404 /index
+
+RewriteRule ^page/([a-zA-Z0-9-_]+)/?$ halaman.php?slug=$1 [L,QSA]
+RewriteRule ^artikel/([a-zA-Z0-9-_]+)/?$ beritaku.php?slug=$1 [L,QSA]
+RewriteRule ^service/([a-zA-Z0-9-_]+)/?$ layananku.php?slug=$1 [L,QSA]
