@@ -52,8 +52,10 @@ include_once "inc/header.php";
                           <td><?php echo  $bil; ?></td>
                           <td><?php echo  $r['nama_layanan']; ?></td>
                           <td><?php echo  "Rp. " . number_format("$r[harga_layanan]", 0, ",", "."); ?></td>
-                          <td><img src="../gambar_layanan/<?php echo  $r['gambar_layanan']; ?>" height="50px"> </td>
-
+                          <td> <img src="../gambar_layanan/<?php echo $r['gambar_layanan']; ?>"
+                              width="80" height="80"
+                              style="object-fit: cover; border-radius: 5px;">
+                          </td>
                           <td><a href="layanan?page=edit&id=<?php echo  $r['id_layanan']; ?>"><button type="button" class="btn btn-circle btn-outline btn-success"><i class="nav-icon fas fa-edit"></i></button></a>
 
                             <a href="layanan?page=hapus&id=<?php echo  $r['id_layanan']; ?>" onclick="return confirm('Yakin ingin hapus data ?')"><button type="button" class="btn btn-circle btn-outline btn-danger"><i class="far fa-trash-alt"></i></button></a>

@@ -279,6 +279,13 @@ include_once "inc/header.php";
                   border-radius: 3px;
                 }
 
+                .shop-items .item img {
+                  width: 100%;
+                  height: 220px;
+                  /* kamu bisa ubah tinggi sesuai kebutuhan */
+                  object-fit: cover;
+                }
+
                 .shop-items .item .item-dtls h4 {
                   margin-top: 13px;
                   margin-bottom: 10px;
